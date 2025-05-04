@@ -1,0 +1,105 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to right, #5f5e5e 375px, #ffffff 375px);
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenedor_img {
+    flex: 1 1 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imagen-cv {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    object-fit: cover;
+}
+
+.datos-container {
+    flex: 2 1 600px;
+    padding: 20px;
+}
+
+h1 {
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #000;
+    margin-top: 0;
+}
+
+.contacto, .DatosPersonales, .formacion, .experiencia, .aptitudes {
+    margin-top: 30px;
+}
+
+.contacto table,
+.DatosPersonales table,
+.formacion table,
+.experiencia table {
+    width: 100%;
+    max-width: 600px;
+    color: #000;
+    border-spacing: 10px;
+}
+
+.contacto table {
+    color: white;
+}
+
+.titulo2 {
+    color: white;
+}
+
+.titulo3 {
+    color: black;
+}
+
+hr {
+    margin: 30px 0;
+    border: 1px solid #000;
+}
+
+.aptitudes ul {
+    list-style: square;
+    padding-left: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .datos-container {
+        text-align: center;
+    }
+
+    h1, h3 {
+        text-align: center;
+    }
+
+    .contacto table,
+    .DatosPersonales table,
+    .formacion table,
+    .experiencia table {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
